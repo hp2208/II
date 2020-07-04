@@ -1,0 +1,97 @@
+var gPlayData = {
+    "beforelink": "",//そのまま
+    "nextlink":"play_all.html?1602",//ファイル名は固定、後ろの数字だけ1個後のセクション
+    "jptitle": "16　ちょっと<ruby>触<rt>さわ</rt></ruby>ってもいいですか",//タイトルはplaylist.htmlから書き写す
+    "jp": [//日本語データ
+        '<th>Ⅰ．</th><td colspan="2"><ruby>正<rt>ただ</rt></ruby>しいものを<ruby>選<rt>えら</rt></ruby>んでください。</td>',
+        '<th><ruby>例<rt>れい</rt></ruby>　</th><td colspan="2" class="star">★<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうしますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>アメリカ<ruby>大使館<rt>たいしかん</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>、<ruby>知<rt>し</rt></ruby>っていますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>ええ、<ruby>知<rt>し</rt></ruby>っています。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>すみませんが、<ruby>地図<rt>ちず</rt></ruby>をかいてくださいませんか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>いいですよ。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>ありがとうございます。</td>',
+        '<th>　　</th><td colspan="2" class="star">★<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はどうしますか。</td>',
+        '<th>１　</th><td colspan="2" class="star">★テストのとき、<ruby>何<rt>なに</rt></ruby>をしてはいけませんか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>じゃ、テストを<ruby>始<rt>はじ</rt></ruby>めます。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>先生<rt>せんせい</rt></ruby>、ノートを<ruby>見<rt>み</rt></ruby>てもいいですか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>いいですよ。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>辞書<rt>じしょ</rt></ruby>もいいですか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td><ruby>辞書<rt>じしょ</rt></ruby>もいいです。でも、テストのとき、<ruby>部屋<rt>へや</rt></ruby>の<ruby>外<rt>そと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ってはいけません。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>分<rt>わ</rt></ruby>かりました。</td>',
+        '<th>　　</th><td colspan="2" class="star">★テストのとき、<ruby>何<rt>なに</rt></ruby>をしてはいけませんか。</td>',
+        '<th>２　</th><td colspan="2" class="star">★<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>森<rt>もり</rt></ruby>さんのお<ruby>仕事<rt>しごと</rt></ruby>は？</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>わたしはソニック<ruby>電気<rt>でんき</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>いています。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>ソニック<ruby>電気<rt>でんき</rt></ruby>ですか。<ruby>知<rt>し</rt></ruby>っています。いい<ruby>会社<rt>かいしゃ</rt></ruby>ですね。<ruby>仕事<rt>しごと</rt></ruby>は<ruby>面白<rt>おもしろ</rt></ruby>いですか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>ええ、<ruby>面白<rt>おもしろ</rt></ruby>いです。わたしの<ruby>仕事<rt>しごと</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えることです。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>えっ、<ruby>電気<rt>でんき</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>で？</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>ええ、<ruby>電子<rt>でんし</rt></ruby>レンジの<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えています。<ruby>電子<rt>でんし</rt></ruby>レンジでいろいろな<ruby>料理<rt>りょうり</rt></ruby>ができますよ。</td>',
+        '<th>　　</th><td colspan="2" class="star">★<ruby>女<rt>おんな</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>は<ruby>何<rt>なん</rt></ruby>ですか。</td>',
+        '<th>３　</th><td colspan="2" class="star">★<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>昨日<rt>きのう</rt></ruby><ruby>何<rt>なに</rt></ruby>をしましたか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td><ruby>昨日<rt>きのう</rt></ruby><ruby>何<rt>なに</rt></ruby>をしましたか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>掃除<rt>そうじ</rt></ruby>をして、それから、<ruby>新宿<rt>しんじゅく</rt></ruby>へ<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>きました。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>えっ、レポートの<ruby>宿題<rt>しゅくだい</rt></ruby>は？</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>宿題<rt>しゅくだい</rt></ruby>は、<ruby>掃除<rt>そうじ</rt></ruby>するまえに、しました。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>そうですか。</td>',
+        '<th>　　</th><td colspan="2" class="star">★<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>昨日<rt>きのう</rt></ruby><ruby>何<rt>なに</rt></ruby>をしましたか。</td>',
+        '<th>４　</th><td colspan="2" class="star">★<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>渋谷<rt>しぶや</rt></ruby><ruby>駅<rt>えき</rt></ruby>からどうやって<ruby>行<rt>い</rt></ruby>きますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>このキャンパスから<ruby>渋谷<rt>しぶや</rt></ruby>のキャンパスまでどうやって<ruby>行<rt>い</rt></ruby>きますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>ここからですか。<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>渋谷<rt>しぶや</rt></ruby>まで<ruby>行<rt>い</rt></ruby>って、<ruby>駅<rt>えき</rt></ruby>から<ruby>歩<rt>ある</rt></ruby>いて<ruby>行<rt>い</rt></ruby>ってください。１５<ruby>分<rt>ふん</rt></ruby>ぐらいです。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>歩<rt>ある</rt></ruby>いて１５<ruby>分<rt>ふん</rt></ruby>ですか……。ちょっと……。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>じゃ、<ruby>渋谷<rt>しぶや</rt></ruby><ruby>駅<rt>えき</rt></ruby>でバスに<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>えて、「<ruby>大学<rt>だいがく</rt></ruby><ruby>前<rt>まえ</rt></ruby>」で<ruby>降<rt>お</rt></ruby>りてください。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>じゃ、そうします。</td>',
+        '<th>　　</th><td colspan="2" class="star">★<ruby>男<rt>おとこ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は<ruby>渋谷<rt>しぶや</rt></ruby><ruby>駅<rt>えき</rt></ruby>からどうやって<ruby>行<rt>い</rt></ruby>きますか。</td>',
+    ],
+    "en": [//英語データ。　【注】日本語データと件数を同じにしてください。
+    ],
+    "mp3": [//音声データ。　【注】日本語データと件数を同じにしてください。
+        //本文会話はsx_h_xx.mp3を使います。hが目印です
+        "@1",
+
+        "B13_01.mp3",
+        "B13_02.mp3",
+        "B13_03.mp3",
+        "B13_04.mp3",
+        "B13_05.mp3",
+
+        "B13_06.mp3",
+        "B13_07.mp3",
+        "B13_08.mp3",
+        "B13_09.mp3",
+        "B13_10.mp3",
+
+        "B13_11.mp3",
+        "B13_12.mp3",
+        "B13_13.mp3",
+        "B13_14.mp3",
+        "B13_15.mp3",
+
+        "B13_16.mp3",
+        "B13_17.mp3",
+        "B13_18.mp3",
+        "B13_19.mp3",
+        "B13_20.mp3",
+
+        "B13_21.mp3",
+        "B13_22.mp3",
+        "B13_23.mp3",
+        "B13_24.mp3",
+        "B13_25.mp3",
+
+        "B13_26.mp3",
+        "B13_27.mp3",
+        "B13_28.mp3",
+        "B13_29.mp3",
+        "B13_30.mp3",
+
+        "B13_31.mp3",
+        "B13_32.mp3",
+        "B13_33.mp3",
+        "B13_34.mp3",
+        "B13_35.mp3",
+
+        "B13_36.mp3",
+        "B13_37.mp3",
+        "B13_38.mp3",
+    ]
+};

@@ -1,0 +1,90 @@
+var gPlayData = {
+    "beforelink": "",//そのまま
+    "nextlink":"play_all.html?1902",//ファイル名は固定、後ろの数字だけ1個後のセクション
+    "jptitle": "19　<ruby>駅<rt>えき</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るくて、きれいだと<ruby>思<rt>おも</rt></ruby>います",//タイトルはplaylist.htmlから書き写す
+    "jp": [//日本語データ
+        '<th>Ⅰ．</th><td colspan="2"><ruby>正<rt>ただ</rt></ruby>しいものを<ruby>選<rt>えら</rt></ruby>んでください。</td>',
+        '<th><ruby>例<rt>れい</rt></ruby>　</th><td colspan="2" class="star">★あした<ruby>何<rt>なに</rt></ruby>をしますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>テストが<ruby>終<rt>お</rt></ruby>わったから、<ruby>暇<rt>ひま</rt></ruby>だね。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>うん。あしたハイキングに<ruby>行<rt>い</rt></ruby>かない？</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>ハイキング、いいね。でも、あしたは<ruby>駅<rt>えき</rt></ruby><ruby>前<rt>まえ</rt></ruby>で<ruby>夜<rt>よる</rt></ruby><ruby>盆踊<rt>ぼんおど</rt></ruby>りがあるよ。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>本当<rt>ほんとう</rt></ruby>？　じゃ、<ruby>山<rt>やま</rt></ruby>へ<ruby>行<rt>い</rt></ruby>って、<ruby>帰<rt>かえ</rt></ruby>ってから、<ruby>夜<rt>よる</rt></ruby><ruby>盆踊<rt>ぼんおど</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く？</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>いいよ。</td>',
+        '<th>　　</th><td colspan="2" class="star">★あした<ruby>何<rt>なに</rt></ruby>をしますか。</td>',
+        '<th>１　</th><td colspan="2" class="star">★<ruby>昨日<rt>きのう</rt></ruby><ruby>横浜<rt>よこはま</rt></ruby>の<ruby>天気<rt>てんき</rt></ruby>はどうでしたか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td><ruby>山田<rt>やまだ</rt></ruby>さん、<ruby>昨日<rt>きのう</rt></ruby><ruby>横浜<rt>よこはま</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きましたか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>ええ、<ruby>行<rt>い</rt></ruby>きました。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td><ruby>天気<rt>てんき</rt></ruby>はどうでしたか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>朝<rt>あさ</rt></ruby>のニュースは<ruby>横浜<rt>よこはま</rt></ruby>は<ruby>昼<rt>ひる</rt></ruby>から<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>ると<ruby>言<rt>い</rt></ruby>いましたが、<ruby>降<rt>ふ</rt></ruby>りませんでした。<ruby>朝<rt>あさ</rt></ruby>から<ruby>晩<rt>ばん</rt></ruby>まで<ruby>晴<rt>は</rt></ruby>れでした。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>そうですか。よかったですね。</td>',
+        '<th>　　</th><td colspan="2" class="star">★<ruby>昨日<rt>きのう</rt></ruby><ruby>横浜<rt>よこはま</rt></ruby>の<ruby>天気<rt>てんき</rt></ruby>はどうでしたか。</td>',
+        '<th>２　</th><td colspan="2" class="star">★<ruby>２人<rt>ふたり</rt></ruby>はアパートを<ruby>探<rt>さが</rt></ruby>しています。どのアパートについて<ruby>話<rt>はな</rt></ruby>していますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>１：</td><td>このアパートはどう？</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>２：</td><td>ちょっと<ruby>駅<rt>えき</rt></ruby>から<ruby>遠<rt>とお</rt></ruby>いね。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>１：</td><td>でも、<ruby>静<rt>しず</rt></ruby>かだよ。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>２：</td><td>そうだね。でも、<ruby>近<rt>ちか</rt></ruby>くにあまり<ruby>店<rt>みせ</rt></ruby>がないから、<ruby>便利<rt>べんり</rt></ruby>じゃないよ。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>１：</td><td>コンビニがあるよ。<ruby>必要<rt>ひつよう</rt></ruby>なものはだいたいコンビニにあるから……。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>２：</td><td>まあ、そうだね。<ruby>生活<rt>せいかつ</rt></ruby>は<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だね。</td>',
+        '<th>　　</th><td colspan="2" class="star">★どのアパートについて<ruby>話<rt>はな</rt></ruby>していますか。</td>',
+        '<th>３　</th><td colspan="2" class="star">★だれがいますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>あれ？　あれはリンさんだね？</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>うん。あれ、だれかと<ruby>一緒<rt>いっしょ</rt></ruby>にいるね。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td><ruby>一緒<rt>いっしょ</rt></ruby>にいる<ruby>人<rt>ひと</rt></ruby>は……マリーさん？</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>あれはマリーさんじゃないよ。</td>',
+        '<th>　　</th><td colspan="2" class="star">★だれがいますか。</td>',
+        '<th>４　</th><td colspan="2" class="star">★<ruby>写真<rt>しゃしん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>のアントニオさんは<ruby>何<rt>なに</rt></ruby>をしていますか。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td>この<ruby>写真<rt>しゃしん</rt></ruby>、<ruby>見<rt>み</rt></ruby>て。<ruby>旅行<rt>りょこう</rt></ruby>のときの<ruby>写真<rt>しゃしん</rt></ruby>。</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>あ、アントニオさんだ。<ruby>何<rt>なに</rt></ruby>かしているね。</td>',
+        '<th>　　</th><td class="subhead"><ruby>女<rt>おんな</rt></ruby>：</td><td><ruby>何<rt>なに</rt></ruby>をしていると<ruby>思<rt>おも</rt></ruby>う？</td>',
+        '<th>　　</th><td class="subhead"><ruby>男<rt>おとこ</rt></ruby>：</td><td>うーん。あ、<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>した。<ruby>猫<rt>ねこ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>していると<ruby>思<rt>おも</rt></ruby>う。かわいい<ruby>猫<rt>ねこ</rt></ruby>がいて、<ruby>建物<rt>たてもの</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったから、アントニオさんが<ruby>探<rt>さが</rt></ruby>していたよ。</td>',
+        '<th>　　</th><td colspan="2" class="star">★<ruby>写真<rt>しゃしん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>のアントニオさんは<ruby>何<rt>なに</rt></ruby>をしていますか。</td>',
+    ],
+    "en": [//英語データ。　【注】日本語データと件数を同じにしてください。
+    ],
+    "mp3": [//音声データ。　【注】日本語データと件数を同じにしてください。
+        //本文会話はsx_h_xx.mp3を使います。hが目印です
+        "@1",
+
+        "B25_01.mp3",
+        "B25_02.mp3",
+        "B25_03.mp3",
+        "B25_04.mp3",
+        "B25_05.mp3",
+
+        "B25_06.mp3",
+        "B25_07.mp3",
+        "B25_08.mp3",
+        "B25_09.mp3",
+        "B25_10.mp3",
+
+        "B25_11.mp3",
+        "B25_12.mp3",
+        "B25_13.mp3",
+        "B25_14.mp3",
+        "B25_15.mp3",
+
+        "B25_16.mp3",
+        "B25_17.mp3",
+        "B25_18.mp3",
+        "B25_19.mp3",
+        "B25_20.mp3",
+
+        "B25_21.mp3",
+        "B25_22.mp3",
+        "B25_23.mp3",
+        "B25_24.mp3",
+        "B25_25.mp3",
+
+        "B25_26.mp3",
+        "B25_27.mp3",
+        "B25_28.mp3",
+        "B25_29.mp3",
+        "B25_30.mp3",
+
+        "B25_31.mp3",
+        "B25_32.mp3",
+        "B25_33.mp3",
+        "B25_34.mp3",
+        "B25_35.mp3",
+    ]
+};
