@@ -1,0 +1,108 @@
+@font-face {
+  font-family: IPA;
+  src: url("fonts/ipam.ttf");
+}
+body {
+  font-size: 15pt;
+  color:#eee;
+  font-family:IPA;
+  background-color: #222;
+}
+.card-body {
+  background-color:#333;
+}
+.dropdown-menu {
+  background-color:#333;
+}
+.dropdown-item {
+  color: #eee;
+}
+#content:empty ~ .hpp {
+  visibility: hidden;
+}
+.hpp {
+  opacity:0.9;
+}
+.btn-round {
+    width: 50px;
+	height: 50px;
+	border: solid thin;
+	border-radius: 50%;
+}
+#btn-play {
+    position: fixed;
+	bottom: 20px;
+	right: 30px;
+    font-size: 12x;
+}
+#btn-rt {
+    width:40px;
+    position: fixed;
+	bottom: 30px;
+	right: 90px;
+    font-size: 10x;
+}
+#btn-enSRT {
+    width:40px;
+    position: fixed;
+	bottom: 30px;
+	right: 140px;
+    font-size: 10x;
+}
+#btn-jaSRT {
+    width:40px;
+    position: fixed;
+	bottom: 30px;
+	right: 190px;
+    font-size: 10x;
+}
+#btn-next {
+    width:40px;
+    position: fixed;
+	bottom: 30px;
+	right: 240px;
+    font-size: 8x;
+}
+#btn-prev {
+    width:40px;
+    position: fixed;
+	bottom: 30px;
+	right: 290px;
+    font-size: 8x;
+}
+
+rt {
+  visibility:hidden;
+}
+.visible-visibility {
+  visibility:visible;
+}
+
+#accordion,.card,.card-header {
+  background-color:#222;
+}
+
+.btn-noneBorder {
+  border-radius:0;
+}
+
+.shade-color {
+  animation: hue-rotate 3s linear infinite;
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+    opacity:0.9;
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+    opacity: 0.8;
+  }
+}
