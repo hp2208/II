@@ -1,7 +1,7 @@
 var audio = document.getElementById("audio"),
 	content = document.getElementById("content"),
 	title = document.getElementById("title"),
-t, d = 0, playingTrackIndex = 0, playingTrackLesson=0, autoNext = false, firstLesson = 1, lastLessonChapterI = 22, lastLesson = 42, jsonContent = null;
+t, d = 0, playingTrackIndex = 0, playingTrackLesson=0, autoNext = false, firstLesson = 0, lastLessonChapterI = 22, lastLesson = 42, jsonContent = null;
 window.onload = function () {
 	//Add indexes to catalogue
 	var catalogue = document.getElementById("catalogue");
