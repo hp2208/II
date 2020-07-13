@@ -106,6 +106,7 @@ audio.oncanplay = function () {
 		content.children[i].style.color = "white";
 	}
 	content.children[playingTrackIndex].style.color = "green";
+        content.children[playingTrackIndex].scrollIntoView({behavior: "smooth", block: "nearest", inline: "nearest"});
 };
 audio.onended = function () {
 	if (autoNext) {
