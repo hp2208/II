@@ -82,11 +82,11 @@ function showTopicContent(lessonIndex, topicIndex) {
 });
 }
 function addSRT(jaSRT, enSRT, mp3Index) {
-	var srt = document.createElement('p');
+	var srt = document.createElement('tr');
     srt.className = "jaSRT";
 	srt.innerHTML = jaSRT;
     if(enSRT!=""||enSRT!=null){
-      var en = document.createElement('p');
+      var en = document.createElement('tr');
       en.innerHTML = enSRT;
       en.className = "enSRT";
       srt.appendChild(en);
@@ -146,7 +146,7 @@ document.getElementById('btn-rt').onclick = function () {
 };
 //Toggle contents of Japanese 
 document.getElementById('btn-jaSRT').onclick = function () {
-  $(".jaSRT").toggle();
+  $('td').toggleClass("visible-visibility");
 };
 //Toggle contents of English
 document.getElementById('btn-enSRT').onclick = function () {
