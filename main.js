@@ -139,14 +139,11 @@ audio.onabort = function() {
 
 //Toggle RT tag
 document.getElementById('btn-rt').onclick = function () {
-  let rt = document.getElementsByTagName("rt");
-  for(var i = 0; i < rt.length; i++) {
-    rt[i].classList.toggle("visible-visibility");
-  }
+  $('rt').toggleClass('visible-visibility');
 };
 //Toggle contents of Japanese 
 document.getElementById('btn-jaSRT').onclick = function () {
-  $('td').toggleClass("visible-visibility");
+  $('td').toggleClass('blur-none');
 };
 //Toggle contents of English
 document.getElementById('btn-enSRT').onclick = function () {

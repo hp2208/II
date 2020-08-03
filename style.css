@@ -72,18 +72,20 @@ body {
 }
 
 rt {
-  filter: blur(2px);
-  transition: all 0.25s ease-out;
   white-space:nowrap !important;
+  visibility: hidden;
 }
 tr > td:nth-child(3) {
   filter: blur(3px);
-  transition: all 0.25s ease-out;
-  padding-left:5px;
+  transition: filter 0.25s ease;
+  padding-left: 5px !important;
 }
 .visible-visibility {
+  visibility: visible !important;
+}
+.blur-none {
   filter: blur(0) !important;
-  transition: all 0.25s ease-out;
+  transition: filter 0.25s ease;
 }
 
 #accordion,.card,.card-header {
