@@ -24,51 +24,56 @@ body {
   opacity:0.9;
 }
 .btn-round {
-    width: 50px;
-	height: 50px;
-	border: solid thin;
 	border-radius: 50%;
 }
 #btn-play {
+    width: 80px;
+	height: 80px;
+    border: solid 2px;
     position: fixed;
-	bottom: 20px;
-	right: 30px;
-    font-size: 12x;
+	bottom: 5px;
+	right: calc( 50% - 20px);
+    font-size: 18px;
 }
 #btn-rt {
-    width:40px;
+    width:50px;
     position: fixed;
-	bottom: 30px;
-	right: 90px;
+	bottom: 25px;
+	right: calc( 50% - 124px);
     font-size: 10x;
+    padding: 10px 0;
 }
 #btn-enSRT {
-    width:40px;
+    width:50px;
     position: fixed;
-	bottom: 30px;
-	right: 140px;
+	bottom: 25px;
+	right: calc( 50% - 176px);
     font-size: 10x;
+    padding: 10px 0;
 }
 #btn-jaSRT {
-    width:40px;
+    width:50px;
     position: fixed;
-	bottom: 30px;
-	right: 190px;
+	bottom: 25px;
+	right: calc( 50% - 72px);
     font-size: 10x;
+    padding: 10px 0;
 }
 #btn-next {
-    width:40px;
+    width:50px;
     position: fixed;
-	bottom: 30px;
-	right: 240px;
-    font-size: 8x;
+	bottom: 25px;
+	right: calc( 50% + 62px);
+    font-size: 15px;
+    padding: 10px 0;
 }
 #btn-prev {
-    width:40px;
+    width:50px;
     position: fixed;
-	bottom: 30px;
-	right: 290px;
-    font-size: 8x;
+	bottom: 25px;
+	right: calc( 50% + 114px);
+    font-size: 15px;
+    padding: 10px 0;
 }
 
 rt {
